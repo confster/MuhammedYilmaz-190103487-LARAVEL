@@ -3,8 +3,8 @@
 <head>
 	<title></title>
 	<style type="text/css">
-		
-		body {
+   
+    body {
     margin: 0px;
     color: #222222;
     font-size: 1em;
@@ -163,28 +163,37 @@ button{
   padding: 5px 10px;
 }
 
-
-	</style>
+    
+  </style>
 </head>
 <body>
 
 <header class='masthead'>
-  <p class='masthead-intro'>Hi I'm</p>
-  <h1 class='masthead-heading'>Muhammed!</h1>
+  <p class='masthead-intro'>Blog</p>
+  <h1 class='masthead-heading'></h1>
 </header>
 <section class="introduction-section">
-    <a href="{{ route('aboutme') }}"><h1>Who Am I?</h1></a>
 </section>
 <section class="location-section">
-    
+    <h1>Climate change</h1>
+    <hr>
+    <p>Greta Tintin Eleonora Ernman Thunberg is a Swedish environmental activist who is internationally known for challenging world leaders to take immediate action against climate change.</p>
+    <hr>
+    <img src="greta.jpg">
+    <p>
+      <hr>
+      Thunberg initially gained notice for her youth and her straightforward speaking manner, both in public and to political leaders and assemblies, in which she criticises world leaders for their failure to take what she considers sufficient action to address the climate crisis.
+    <hr>
+    Thunberg's activism started after convincing her parents to adopt several lifestyle choices to reduce their own carbon footprint. In August 2018, at age 15, she started spending her school days outside the Swedish Parliament to call for stronger action on climate change by holding up a sign reading Skolstrejk för klimatet (School strike for climate). Soon, other students engaged in similar protests in their own communities. Together, they organised a school climate strike movement under the name Fridays for Future. After Thunberg addressed the 2018 United Nations Climate Change Conference, student strikes took place every week somewhere in the world. In 2019, there were multiple coordinated multi-city protests involving over a million students each.
+    <hr>
+     To avoid flying, Thunberg sailed to North America where she attended the 2019 UN Climate Action Summit. Her speech there, in which she exclaimed "how dare you", was widely taken up by the press and incorporated into music.
+    <hr>
+    Her sudden rise to world fame has made her both a leader[9] and a target for critics. Her influence on the world stage has been described by The Guardian and other newspapers as the "Greta effect". She received numerous honours and awards including an honorary Fellowship of the Royal Scottish Geographical Society, inclusion in Time's 100 most influential people, being the youngest Time Person of the Year, inclusion in the Forbes list of The World's 100 Most Powerful Women (2019), and two consecutive nominations for the Nobel Peace Prize (2019 and 2020)
+    <hr>
+  </p>
 </section>
 <section class="questions-section">
-    <a href="{{ route('contactme') }}"><h1>Contact Me!</h1></a>
-    
-</section>
-
-<section class="questions-section">
-    <a href="{{ route('blog') }}"><h1>Blog Posts!</h1></a>
+     <a href="index.html"><button>Go Back</button></a>
     
 </section>
 

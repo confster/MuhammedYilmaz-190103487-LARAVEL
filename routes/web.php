@@ -24,3 +24,7 @@ Route::get('/aboutme', function () {
 Route::get('/contactme', function () {
     return view('contactme');
 })->name('contactme');
+
+Route::get('/blog', function () {
+    return view('blog');
+})->name('blog');
