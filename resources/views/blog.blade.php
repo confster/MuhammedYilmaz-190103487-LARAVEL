@@ -193,7 +193,7 @@ button{
   </p>
 </section>
 <section class="questions-section">
-     <a href="index.html"><button>Go Back</button></a>
+     <a href="{{ route('main')}}"><button>Go Back</button></a>
     
 </section>
 

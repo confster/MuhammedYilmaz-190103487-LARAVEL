@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
+
+use App\Models\Clients;
+use App\Http\Controllers\ClientController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +32,6 @@ Route::get('/contactme', function () {
 Route::get('/blog', function () {
     return view('blog');
 })->name('blog');
+
+Route::get('client', [ClientController::class, 'index']);
+
