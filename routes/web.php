@@ -33,5 +33,19 @@ Route::get('/blog', function () {
     return view('blog');
 })->name('blog');
 
+Route::get('client/add', function() {
+    DB::table('clients')->insert([
+        'name' => 'Muhammed',
+        'surname' => 'Yilmaz',
+        'age' => 19
+    ]);
+});
+
 Route::get('client', [ClientController::class, 'index']);
+
+Route::get('create', function(){
+    return view('create');
+});
+
+Route::post('create', [ClientController::class, 'store'])->name('add-client');
 
