@@ -49,3 +49,4 @@ Route::get('create', function(){
 
 Route::post('create', [ClientController::class, 'store'])->name('add-client');
 
+Route::get('clients', [ClientController::class, 'index']);
