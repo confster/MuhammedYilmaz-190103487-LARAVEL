@@ -50,3 +50,9 @@ Route::get('create', function(){
 Route::post('create', [ClientController::class, 'store'])->name('add-client');
 
 Route::get('clients', [ClientController::class, 'index']);
+
+Route::get('clients/create', function(){
+    return view('client.create');
+});
+
+Route::post('client/create', [ClientController::class, 'store'])->name('add-client');
