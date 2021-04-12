@@ -21,6 +21,13 @@ Route::get('/', function () {
     return view('main');
 })->name('main');
 
+Route::get('/{lang}', function($lang){
+    App::setlocale($lang);
+    return view('main'); 
+});
+
+Route::get('locale/{locale}', 'LangController@changeLocale')->name('locale');
+
 Route::get('/aboutme', function () {
     return view('aboutme');
 })->name('aboutme');

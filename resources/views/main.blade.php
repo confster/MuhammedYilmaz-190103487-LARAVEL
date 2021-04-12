@@ -169,28 +169,32 @@ button{
 <body>
 
 <header class='masthead'>
-  <p class='masthead-intro'>Hi I'm</p>
-  <h1 class='masthead-heading'>Muhammed!</h1>
+  <p class='masthead-intro'>{{__('profile.hiam')}}</p>
+  <h1 class='masthead-heading'>{{__('profile.muhammed')}}</h1>
 </header>
 <section class="introduction-section">
-    <a href="{{ route('aboutme') }}"><h1>Who Am I?</h1></a>
+    <a href="{{ route('aboutme') }}"><h1>{{__('profile.whoami')}}</h1></a>
 </section>
 <section class="location-section">
     
 </section>
 <section class="questions-section">
-    <a href="{{ route('contactme') }}"><h1>Contact Me!</h1></a>
+    <a href="{{ route('contactme') }}"><h1>{{__('profile.contact')}}</h1></a>
     
 </section>
 
 <section class="questions-section">
-    <a href="{{ route('blog') }}"><h1>Blog Posts!</h1></a>
+    <a href="{{ route('blog') }}"><h1>{{__('profile.blog')}}</h1></a>
     
 </section>
 
 <footer class="content-footer">
     <ul class="social">
-        <li><a class="css-is-deranged" href="https://github.com/confster">My GitHub Account</a></li>
+        <li><a class="css-is-deranged" href="https://github.com/confster">{{__('profile.github')}}</a></li>
+    </ul>
+
+    <ul class="social">
+        <li><a class="css-is-deranged" href="{{ route('locale', 'ru') }}">Language</a></li>
     </ul>
   
 </footer>

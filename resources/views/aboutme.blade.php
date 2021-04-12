@@ -169,23 +169,23 @@ button{
 <body>
 
 <header class='masthead'>
-  <p class='masthead-intro'>Who Am I</p>
+  <p class='masthead-intro'>{{__('profile.whoami')}}</p>
   <h1 class='masthead-heading'>?</h1>
 </header>
 <section class="introduction-section">
 </section>
 <section class="location-section">
-    <h1>Who Am I?</h1>
-    <p>I am Muhammed Yilmaz, who is currently studying in Suleyman Demirel University. I'm originally from Turkey, but I'm also from Kazakhstan </p>
+    <h1>{{__('profile.whoami')}}</h1>
+    <p>{{__('profile.whoamitext')}}</p>
 </section>
 <section class="questions-section">
-     <a href="{{ route('main') }}"><button>Go Back</button></a>
+     <a href="{{ route('main') }}"><button>{{__('profile.goback')}}</button></a>
     
 </section>
 
 <footer class="content-footer">
     <ul class="social">
-        <li><a class="css-is-deranged" href="https://github.com/confster">My GitHub Account</a></li>
+        <li><a class="css-is-deranged" href="https://github.com/confster">{{__('profile.github')}}</a></li>
     </ul>
   
 </footer>

@@ -169,23 +169,23 @@ button{
 <body>
 
 <header class='masthead'>
-  <p class='masthead-intro'>Contact</p>
-  <h1 class='masthead-heading'>Me</h1>
+  <p class='masthead-intro'>{{__('profile.contact')}}</p>
+  <h1 class='masthead-heading'>!</h1>
 </header>
 <section class="introduction-section">
 </section>
 <section class="location-section">
-    <h1>You may contact me via this number:</h1>
+    <h1>{{__('profile.contacttext')}}</h1>
     <p> +7 (775) 209-70-64 </p>
 </section>
 <section class="questions-section">
-     <a href="{{ route('main') }}"><button>Go Back</button></a>
+     <a href="{{ route('main') }}"><button>{{__('profile.goback')}}</button></a>
     
 </section>
 
 <footer class="content-footer">
     <ul class="social">
-        <li><a class="css-is-deranged" href="https://github.com/confster">My GitHub Account</a></li>
+        <li><a class="css-is-deranged" href="https://github.com/confster">{{__('profile.github')}}</a></li>
     </ul>
   
 </footer>
